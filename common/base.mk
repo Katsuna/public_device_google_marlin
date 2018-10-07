@@ -635,28 +635,10 @@ FSTMAN += fstman.ini
 
 PRODUCT_PACKAGES := \
     AccountAndSyncSettings \
-    DeskClock \
     AlarmProvider \
     Bluetooth \
-    Calendar \
-    Camera \
-    CellBroadcastReceiver \
-    CertInstaller \
     DrmProvider \
-    Email \
-	ExactCalculator \
-    Gallery2 \
-    LatinIME \
-    Mms \
-    Music \
-    Phone \
-    Provision \
-    QuickSearchBox \
-    Settings \
-    Sync \
-    SystemUI \
     Updater \
-    CalendarProvider \
     SyncProvider \
     VoiceDialer \
     VideoEditor
@@ -665,11 +647,7 @@ PRODUCT_PACKAGES := \
 ifneq ($(TARGET_USES_AOSP),true)
 PRODUCT_PACKAGES += \
        BluetoothExt \
-       BTTestApp \
-       HiddTestApp \
-       BTLogKit \
        a4wpservice \
-       BTLogSave \
        wipowerservice
 endif
 
@@ -756,9 +734,6 @@ PRODUCT_PACKAGES += $(IMS_EXT)
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
-        LiveWallpapers \
-        LiveWallpapersPicker \
-        VisualizationWallpapers \
         librs_jni
 
 # Filesystem management tools
